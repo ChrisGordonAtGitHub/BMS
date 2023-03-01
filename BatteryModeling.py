@@ -104,41 +104,41 @@ def SOC_OCV_Table_Extraction(RatedCapacity, lightDscCurrent, heavyDscCurrent,
     return SOC_OCV_Table
 
 
-# RatedCapacity = 4.360
-# lightDscCurrent = RatedCapacity / 40.
-# heavyDscCurrent = 2 * lightDscCurrent
+RatedCapacity = 4.360
+lightDscCurrent = RatedCapacity / 40.
+heavyDscCurrent = 2 * lightDscCurrent
 
-# lightDscStartIdx_DS = 7250
-# lightDscEndIdx_DS = 145690
-# heavyDscStartIdx_DS = 152862
-# heavyDscEndIdx_DS = 222212
-# testFileLocation_DS = r'D:\Chris\Projects\Coulomb Meter\具体项目\手机\Cetus\Cetus-\协助RT攻关\BT231_25C_OCV_DS20230220_2023_02_20_113444'
-# testFileName_DS = r'BT231_25C_OCV_DS20230220_Channel_1_Wb_1.xlsx'
-# testSheetName_DS = r'Channel-1_1'
-# useCols_DS = 'A:H,J:K'
-# outputTableLocation_DS = r'D:\Chris\Projects\Coulomb Meter\具体项目\手机\Cetus\Cetus-\协助RT攻关\BT231_25C_OCV_DS20230220_2023_02_20_113444'
-# outputTableName_DS = r'SOC_OCV_Table_25C_DS.xlsx'
+lightDscStartIdx_DS = 7250
+lightDscEndIdx_DS = 145690
+heavyDscStartIdx_DS = 152862
+heavyDscEndIdx_DS = 222212
+testFileLocation_DS = r'D:\Chris\Projects\Coulomb Meter\具体项目\手机\Cetus\Cetus-\协助RT攻关\BT231_25C_OCV_DS20230220_2023_02_20_113444'
+testFileName_DS = r'BT231_25C_OCV_DS20230220_Channel_1_Wb_1.xlsx'
+testSheetName_DS = r'Channel-1_1'
+useCols_DS = 'A:H,J:K'
+outputTableLocation_DS = r'D:\Chris\Projects\Coulomb Meter\具体项目\手机\Cetus\Cetus-\协助RT攻关\BT231_25C_OCV_DS20230220_2023_02_20_113444'
+outputTableName_DS = r'SOC_OCV_Table_25C_DS.xlsx'
 
-# lightDscStartIdx_XWD = 7875
-# lightDscEndIdx_XWD = 146514
-# heavyDscStartIdx_XWD = 153670
-# heavyDscEndIdx_XWD = 223047
-# testFileLocation_XWD = r'D:\Chris\Projects\Coulomb Meter\具体项目\手机\Cetus\Cetus-\协助RT攻关\BT231_25C_OCV_XWD20230220_2023_02_20_115258'
-# testFileName_XWD = r'BT231_25C_OCV_XWD20230220_Channel_3_Wb_1.xlsx'
-# testSheetName_XWD = r'Channel-3_1'
-# useCols_XWD = ':H,J:K'
-# outputTableLocation_XWD = r'D:\Chris\Projects\Coulomb Meter\具体项目\手机\Cetus\Cetus-\协助RT攻关\BT231_25C_OCV_XWD20230220_2023_02_20_115258'
-# outputTableName_XWD = r'SOC_OCV_Table_25C_XWD.xlsx'
+lightDscStartIdx_XWD = 7875
+lightDscEndIdx_XWD = 146514
+heavyDscStartIdx_XWD = 153670
+heavyDscEndIdx_XWD = 223047
+testFileLocation_XWD = r'D:\Chris\Projects\Coulomb Meter\具体项目\手机\Cetus\Cetus-\协助RT攻关\BT231_25C_OCV_XWD20230220_2023_02_20_115258'
+testFileName_XWD = r'BT231_25C_OCV_XWD20230220_Channel_3_Wb_1.xlsx'
+testSheetName_XWD = r'Channel-3_1'
+useCols_XWD = ':H,J:K'
+outputTableLocation_XWD = r'D:\Chris\Projects\Coulomb Meter\具体项目\手机\Cetus\Cetus-\协助RT攻关\BT231_25C_OCV_XWD20230220_2023_02_20_115258'
+outputTableName_XWD = r'SOC_OCV_Table_25C_XWD.xlsx'
 
-# SOC_OCV_DS_Table = SOC_OCV_Table_Extraction(RatedCapacity, lightDscCurrent, heavyDscCurrent, 
-#                                             testFileLocation_DS, testFileName_DS, testSheetName_DS, useCols_DS, 
-#                                             lightDscStartIdx_DS, lightDscEndIdx_DS, heavyDscStartIdx_DS, heavyDscEndIdx_DS, 
-#                                             outputTableLocation_DS, outputTableName_DS)
+SOC_OCV_DS_Table = SOC_OCV_Table_Extraction(RatedCapacity, lightDscCurrent, heavyDscCurrent, 
+                                            testFileLocation_DS, testFileName_DS, testSheetName_DS, useCols_DS, 
+                                            lightDscStartIdx_DS, lightDscEndIdx_DS, heavyDscStartIdx_DS, heavyDscEndIdx_DS, 
+                                            outputTableLocation_DS, outputTableName_DS)
 
-# SOC_OCV_XWD_Table = SOC_OCV_Table_Extraction(RatedCapacity, lightDscCurrent, heavyDscCurrent, 
-#                                             testFileLocation_XWD, testFileName_XWD, testSheetName_XWD, useCols_XWD, 
-#                                             lightDscStartIdx_XWD, lightDscEndIdx_XWD, heavyDscStartIdx_XWD, heavyDscEndIdx_XWD, 
-#                                             outputTableLocation_XWD, outputTableName_XWD)
+SOC_OCV_XWD_Table = SOC_OCV_Table_Extraction(RatedCapacity, lightDscCurrent, heavyDscCurrent, 
+                                            testFileLocation_XWD, testFileName_XWD, testSheetName_XWD, useCols_XWD, 
+                                            lightDscStartIdx_XWD, lightDscEndIdx_XWD, heavyDscStartIdx_XWD, heavyDscEndIdx_XWD, 
+                                            outputTableLocation_XWD, outputTableName_XWD)
 
 RatedCapacity = 0.530
 lightDscCurrent = RatedCapacity / 40.
